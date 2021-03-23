@@ -31,14 +31,14 @@ $ chmod 400 llavesita.pem
 $ ssh -i llavesita.pem ubuntu@Direccion-ip-de-AWS
 
 # INCIAR INSTALACION LAMP
-'''
+```
 sudo su
 apt-get -y install wget git
 git clone https://github.com/teddysun/lamp.git
 cd lamp
 chmod 755 *.sh
 ./lamp.sh
-'''
+```
 Y esperar 25 minutos promedio, por tal ocuparemos crear nuestro DOMINIO GRATUITO en NAME.COM con la beca de GitHub Pro
 VIDEO PARTE 2: https://youtu.be/4qD030SzmH8
 
