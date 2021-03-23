@@ -26,15 +26,16 @@
 NOTA: poner bien la direccion IP no agregar espacios déspues o antes, TERMIUS marca error.
 
 
-# ACCEDER CON GIT-FOR-WINDOWS, macOS y Linux
-Son estos tres comandos para acceder en los otros sistemas operativos
+## Acceder con GIT-FOR-WINDOWS, macOS y Linux
+Son estos tres comandos para acceder en los otros sistemas operativos, la diferencia en Windows abrir el POWERSHELL o CMD dentro de menu de ejecución y en los otros dos usar la TERMINAL.
+![](images/terminal.png)
 ```
 $ cd descargar (el directorio donde esta la llavesita.pem)
 $ chmod 400 llavesita.pem
 $ ssh -i llavesita.pem ubuntu@Direccion-ip-de-AWS
 ```
 
-## CROMEBOOKS agregar la extensión de SSH en complementos
+## CHROMEBOOKS agregar la extensión de SSH en complementos
 ----
 
 # INCIAR INSTALACION L.A.M.P. (Linux, Apache, Mysql, Php)
