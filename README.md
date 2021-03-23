@@ -26,7 +26,7 @@
 NOTA: poner bien la direccion IP no agregar espacios déspues o antes, TERMIUS marca error.
 
 
-## Acceder con GIT-FOR-WINDOWS, macOS y Linux
+## Acceder al servidor con GIT-FOR-WINDOWS, macOS y Linux
 Son estos tres comandos para acceder en los otros sistemas operativos, la diferencia en Windows abrir el POWERSHELL o CMD dentro de menu de ejecución y en los otros dos usar la TERMINAL.
 ![](images/terminal.png)
 ```
@@ -62,6 +62,7 @@ Telf 664 686 2701
 ---
 
 # ASIGNACION DE LA DIRECCION-IP de AWS A EL NUEVO DOMINIO BECA
+Para este paso ocupamos nuevamente la DIRECCION-IP-AWS del servidor que estamos conectandonos por Termius/SSH.
 Una vez que esté utilizando servidores de nombres, siga los pasos a continuación:
 - Inicie sesión en su cuenta de Name.com.
 - Haga clic en el botón MIS DOMINIOS, ubicado en la esquina superior derecha.
@@ -76,6 +77,16 @@ Aquí agregará el registro A deseado, proporcionado por su anfitrión. Normalme
 - Deje TTL en 300 (predeterminado)
 - Haga clic en el botón azul Agregar registro.
 ![](https://cs.name.com/hc/article_attachments/360088588533/A_Wild_Record.png)
+
+----
+# LISTO VERIFICAR EL REGISTRO A 
+Vía http://leafdns.com teclear su dominio y dará un reporte de REGISTRO A y la IP ya estaria actualizarla
+
+----
+# KODExplorer 
+Y cierre de la practica es ponerle seguridad al Explorador de página KODExplorer y agregar una pagina de bienvenida.
+https://youtu.be/k8i5eDeEjQw
+
 
 
 
