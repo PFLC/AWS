@@ -15,6 +15,7 @@
 ----
 
 ## Dos vias para acceder via SSH al nuevo servidor via TERMIUS
+![](images/termius.png)
 - Agregar la llavesita.pem al KEYCHAIN (o llavero) de la APP en Android/iphone solo copiar el TEXTO en area PrivateKEY
 - Video para Iphone: https://youtu.be/71hE_9ke6k4 en Android muy similar, copiando texto de la llave.
 - Agregar HOST (Direccion-ip-de-AWS)
@@ -26,9 +27,14 @@ NOTA: poner bien la direccion IP no agregar espacios déspues o antes, TERMIUS m
 
 
 # ACCEDER CON GIT-FOR-WINDOWS, macOS y Linux
+Son estos tres comandos para acceder en los otros sistemas operativos
+```
 $ cd descargar (el directorio donde esta la llavesita.pem)
 $ chmod 400 llavesita.pem
 $ ssh -i llavesita.pem ubuntu@Direccion-ip-de-AWS
+```
+
+## CROMEBOOKS agregar la extensión de SSH en complementos
 ----
 
 # INCIAR INSTALACION L.A.M.P. (Linux, Apache, Mysql, Php)
