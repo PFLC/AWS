@@ -10,8 +10,37 @@ Pasos para tener su LAMP server en Ubuntu 20 dentro de AWSEducate
 - EC2: Teclear "llave" de acceso con un nombre de archivo fácil de recordar (ejemplo: llavesita.pem)
 - Descargar: TERMIUS.com o Git For Windows https://git-scm.com/download/win para WINDOWS
 - Descargar: en macOS y Linux es opcional pero puede usar TERMIUS.com si lo prefiere, para Android e Iphone es bienvenido instalarlo.
+- VIDEO PARTE 1:https://youtu.be/YwmyVAnQ0RI
 
 Dos vias para acceder a continuación:
 
 # ACCEDER AL SERVIDOR via TERMIUS
-- Agregar la llavesita.pem al KEYCHAIN (o llavero) de la APP
+- Agregar la llavesita.pem al KEYCHAIN (o llavero) de la APP en Android/iphone solo copiar el TEXTO en area PrivateKEY
+- -Video para Iphone: https://youtu.be/71hE_9ke6k4
+- Agregar HOST (Direccion-ip-de-AWS)
+- Agregar IP Direccion-ip-de-AWS
+- Anotar el usuario es "ubuntu" minusculas sin contraseña
+- KEY es la *llavesita.pem* que esta descargas en su PC al crear AWS EC2 instancia
+- Y conectarse.
+- NOTA: poner bien la direccion IP no agregar espacios despues o antes, TERMIUS marca error.
+
+
+# ACCEDER CON GIT-FOR-WINDOWS, macOS y Linux
+$ cd descargar (el directorio donde esta la llavesita.pem)
+$ chmod 400 llavesita.pem
+$ ssh -i llavesita.pem ubuntu@Direccion-ip-de-AWS
+
+# INCIAR INSTALACION LAMP
+´´´
+sudo su
+apt-get -y install wget git
+git clone https://github.com/teddysun/lamp.git
+cd lamp
+chmod 755 *.sh
+./lamp.sh
+´´´
+Y esperar 25 minutos promedio, por tal ocuparemos crear nuestro DOMINIO GRATUITO en NAME.COM con la beca de GitHub Pro
+VIDEO PARTE 2: https://youtu.be/4qD030SzmH8
+
+
+
