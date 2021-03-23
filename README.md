@@ -1,6 +1,6 @@
 ![](https://de8964361f4bb909de8d-fe8b524ce0801bda0a4b2a48b0c06837.ssl.cf4.rackcdn.com/aKP5jfzpYGi6onA5crCDocysvw9ggtPgErjm5QPWLo6EPoGUVyiYziQKc42nuiDH.1532667105/AWSLogocloud.png)
 
-Pasos para tener su LAMP server en Ubuntu 20 dentro de AWSEducate
+# Pasos para tener su LAMP server en Ubuntu 20 dentro de AWSEducate
 
 - Acceder a su beca de AWSEducate.com de $50 dolares y via CONSOLA invocar EC2 
 - EC2: Plan básico de Ubuntu 20 “FREE TIER” (libre de cobro)
@@ -14,17 +14,15 @@ Pasos para tener su LAMP server en Ubuntu 20 dentro de AWSEducate
 
 ----
 
-Dos vias para acceder a continuación:
-
-# ACCEDER AL SERVIDOR via TERMIUS
+## Dos vias para acceder via SSH al nuevo servidor via TERMIUS
 - Agregar la llavesita.pem al KEYCHAIN (o llavero) de la APP en Android/iphone solo copiar el TEXTO en area PrivateKEY
-- -Video para Iphone: https://youtu.be/71hE_9ke6k4
+- Video para Iphone: https://youtu.be/71hE_9ke6k4 en Android muy similar, copiando texto de la llave.
 - Agregar HOST (Direccion-ip-de-AWS)
 - Agregar IP Direccion-ip-de-AWS
 - Anotar el usuario es "ubuntu" minusculas sin contraseña
 - KEY es la *llavesita.pem* que esta descargas en su PC al crear AWS EC2 instancia
-- Y conectarse.
-- NOTA: poner bien la direccion IP no agregar espacios despues o antes, TERMIUS marca error.
+- Y conectarse, puede aumentar el tipo de letra si esta muy chica en PREFERENCIAS y reconectarse.
+NOTA: poner bien la direccion IP no agregar espacios déspues o antes, TERMIUS marca error.
 
 
 # ACCEDER CON GIT-FOR-WINDOWS, macOS y Linux
@@ -34,7 +32,7 @@ $ ssh -i llavesita.pem ubuntu@Direccion-ip-de-AWS
 ----
 
 # INCIAR INSTALACION L.A.M.P. (Linux, Apache, Mysql, Php)
-Una vez que esta dentor del servidor aplicar las instrucciones de instalación siguiente:
+Una vez que esta dentro SSH del servidor aplicar las instrucciones de instalación siguiente:
 ```
 sudo su
 apt-get -y install wget git
